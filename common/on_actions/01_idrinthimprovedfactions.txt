@@ -1,0 +1,13 @@
+# small events + special resource generation
+on_monthly_pulse = {
+	events = {
+		idrinthimprovedfactions.1
+	}
+}
+
+# special resource related
+on_yearly_pulse = {
+	events = {
+		idrinthimprovedfactions.2
+	}
+}
