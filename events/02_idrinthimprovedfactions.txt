@@ -1,0 +1,768 @@
+namespace idrinthimprovedfactions;
+country_event = {
+    id = idrinthimprovedfactions.2
+    is_triggered_only = yes
+    immediate = {
+        every_country = {
+            limit = { 
+                exists = capital_scope
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.201}
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.202}
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.203}
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.204}
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.205}
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.206}
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.207}
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.208}
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.209}
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.210}
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.211}
+            }
+            any_owned_planet = {
+                        panet_event = {id=idrinthimprovedfactions.212}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
+###############
+# AUTHORITARIAN
+###############
+planet_event = {
+    id = idrinthimprovedfactions.201
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 1000
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_veteran_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 500
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_elite_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+        if = {
+            limit = {
+                idrinthimprovedfactions_influence_authoritarian > 250
+            }
+            random_list = {
+                25 = {
+                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    create_army = {
+                        name = "NAME_Authoritarian_Guard"
+                        owner = FROMFROM
+                        species = FROMFROM
+                        type = "authorian_guard"
+                    }
+                }
+                75 = {}
+            }
+        }
+    }
+}
