@@ -52,7 +52,7 @@ planet_event = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -69,7 +69,7 @@ planet_event = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -86,7 +86,7 @@ planet_event = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -109,10 +109,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_egalitarian = -1000
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Egalitarian_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -126,10 +126,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_egalitarian = -500
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Egalitarian_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -143,10 +143,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_egalitarian = -250
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Egalitarian_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -169,10 +169,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_xenophobe = -1000
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Xenophobe_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -186,10 +186,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_xenophobe = -500
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Xenophobe_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -203,10 +203,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_xenophobe = -250
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Xenophobe_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -229,10 +229,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_xenophile = -1000
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Xenophile_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -246,10 +246,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_xenophile = -500
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Xenophile_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -263,10 +263,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_xenophile = -250
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Xenophile_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -289,10 +289,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_militarist = -1000
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Militarist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -306,10 +306,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_militarist = -500
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Militarist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -323,10 +323,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_militarist = -250
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Militarist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -349,10 +349,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_pacifist = -1000
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Pacifist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -366,10 +366,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_pacifist = -500
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Pacifist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -383,10 +383,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_pacifist = -250
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Pacifist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -409,10 +409,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_spiritualist = -1000
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Spiritualist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -426,10 +426,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_spiritualist = -500
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Spiritualist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -443,10 +443,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_spiritualist = -250
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Spiritualist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -469,10 +469,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_materialist = -1000
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Materialist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -486,10 +486,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_materialist = -500
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Materialist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_elite_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
@@ -503,10 +503,10 @@ planet_event = {
                 25 = {
                     add_idrinthimprovedfactions_influence_materialist = -250
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
+                        name = "NAME_Materialist_Guard"
                         owner = FROMFROM
                         species = FROMFROM
-                        type = "authorian_guard"
+                        type = "assault_army"
                     }
                 }
                 75 = {}
