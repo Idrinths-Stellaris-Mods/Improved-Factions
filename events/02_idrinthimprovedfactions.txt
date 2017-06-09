@@ -31,18 +31,6 @@ country_event = {
             any_owned_planet = {
                         panet_event = {id=idrinthimprovedfactions.208}
             }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.209}
-            }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.210}
-            }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.211}
-            }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.212}
-            }
         }
     }
 }
@@ -107,19 +95,19 @@ planet_event = {
     }
 }
 ###############
-# AUTHORITARIAN
+# EGALITARIAN
 ###############
 planet_event = {
-    id = idrinthimprovedfactions.201
+    id = idrinthimprovedfactions.202
     is_triggered_only = yes
     immediate = {
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
+                idrinthimprovedfactions_influence_egalitarian > 1000
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    add_idrinthimprovedfactions_influence_egalitarian = -1000
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -132,11 +120,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
+                idrinthimprovedfactions_influence_egalitarian > 500
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    add_idrinthimprovedfactions_influence_egalitarian = -500
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -149,11 +137,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
+                idrinthimprovedfactions_influence_egalitarian > 250
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    add_idrinthimprovedfactions_influence_egalitarian = -250
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -167,19 +155,19 @@ planet_event = {
     }
 }
 ###############
-# AUTHORITARIAN
+# XENOPHOBE
 ###############
 planet_event = {
-    id = idrinthimprovedfactions.201
+    id = idrinthimprovedfactions.203
     is_triggered_only = yes
     immediate = {
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
+                idrinthimprovedfactions_influence_xenophobe > 1000
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    add_idrinthimprovedfactions_influence_xenophobe = -1000
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -192,11 +180,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
+                idrinthimprovedfactions_influence_xenophob > 500
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    add_idrinthimprovedfactions_influence_xenophobe = -500
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -209,11 +197,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
+                idrinthimprovedfactions_influence_xenophobe > 250
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    add_idrinthimprovedfactions_influence_xenophobe = -250
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -227,19 +215,19 @@ planet_event = {
     }
 }
 ###############
-# AUTHORITARIAN
+# XENOPHILE
 ###############
 planet_event = {
-    id = idrinthimprovedfactions.201
+    id = idrinthimprovedfactions.204
     is_triggered_only = yes
     immediate = {
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
+                idrinthimprovedfactions_influence_xenophile > 1000
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    add_idrinthimprovedfactions_influence_xenophile = -1000
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -252,11 +240,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
+                idrinthimprovedfactions_influence_xenophile > 500
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    add_idrinthimprovedfactions_influence_xenophile = -500
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -269,11 +257,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
+                idrinthimprovedfactions_influence_xenophile > 250
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    add_idrinthimprovedfactions_influence_xenophile = -250
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -287,19 +275,19 @@ planet_event = {
     }
 }
 ###############
-# AUTHORITARIAN
+# MILITARIST
 ###############
 planet_event = {
-    id = idrinthimprovedfactions.201
+    id = idrinthimprovedfactions.205
     is_triggered_only = yes
     immediate = {
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
+                idrinthimprovedfactions_influence_militarist > 1000
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    add_idrinthimprovedfactions_influence_militarist = -1000
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -312,11 +300,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
+                idrinthimprovedfactions_influence_militarist > 500
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    add_idrinthimprovedfactions_influence_militarist = -500
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -329,11 +317,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
+                idrinthimprovedfactions_influence_militarist> 250
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    add_idrinthimprovedfactions_influence_militarist = -250
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -347,19 +335,19 @@ planet_event = {
     }
 }
 ###############
-# AUTHORITARIAN
+# PACIFIST
 ###############
 planet_event = {
-    id = idrinthimprovedfactions.201
+    id = idrinthimprovedfactions.206
     is_triggered_only = yes
     immediate = {
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
+                idrinthimprovedfactions_influence_pacifist > 1000
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    add_idrinthimprovedfactions_influence_pacifist = -1000
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -372,11 +360,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
+                idrinthimprovedfactions_influence_pacifist > 500
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    add_idrinthimprovedfactions_influence_pacifist = -500
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -389,11 +377,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
+                idrinthimprovedfactions_influence_pacifist > 250
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    add_idrinthimprovedfactions_influence_pacifist = -250
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -407,19 +395,19 @@ planet_event = {
     }
 }
 ###############
-# AUTHORITARIAN
+# SPIRITUALIST
 ###############
 planet_event = {
-    id = idrinthimprovedfactions.201
+    id = idrinthimprovedfactions.207
     is_triggered_only = yes
     immediate = {
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
+                idrinthimprovedfactions_influence_spiritualist > 1000
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    add_idrinthimprovedfactions_influence_spiritualist = -1000
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -432,11 +420,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
+                idrinthimprovedfactions_influence_spiritualist > 500
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    add_idrinthimprovedfactions_influence_spiritualist = -500
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -449,11 +437,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
+                idrinthimprovedfactions_influence_spiritualist > 250
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    add_idrinthimprovedfactions_influence_spiritualist = -250
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -467,19 +455,19 @@ planet_event = {
     }
 }
 ###############
-# AUTHORITARIAN
+# MATERIALIST
 ###############
 planet_event = {
-    id = idrinthimprovedfactions.201
+    id = idrinthimprovedfactions.208
     is_triggered_only = yes
     immediate = {
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
+                idrinthimprovedfactions_influence_materialist > 1000
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
+                    add_idrinthimprovedfactions_influence_materialist = -1000
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -492,11 +480,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
+                idrinthimprovedfactions_influence_materialist > 500
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
+                    add_idrinthimprovedfactions_influence_materialist = -500
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
@@ -509,251 +497,11 @@ planet_event = {
         }
         if = {
             limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
+                idrinthimprovedfactions_influence_materialist > 250
             }
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-    }
-}
-###############
-# AUTHORITARIAN
-###############
-planet_event = {
-    id = idrinthimprovedfactions.201
-    is_triggered_only = yes
-    immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_elite_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-    }
-}
-###############
-# AUTHORITARIAN
-###############
-planet_event = {
-    id = idrinthimprovedfactions.201
-    is_triggered_only = yes
-    immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_elite_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-    }
-}
-###############
-# AUTHORITARIAN
-###############
-planet_event = {
-    id = idrinthimprovedfactions.201
-    is_triggered_only = yes
-    immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_elite_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-    }
-}
-###############
-# AUTHORITARIAN
-###############
-planet_event = {
-    id = idrinthimprovedfactions.201
-    is_triggered_only = yes
-    immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_veteran_elite_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "authorian_elite_guard"
-                    }
-                }
-                75 = {}
-            }
-        }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
+                    add_idrinthimprovedfactions_influence_materialist = -250
                     create_army = {
                         name = "NAME_Authoritarian_Guard"
                         owner = FROMFROM
