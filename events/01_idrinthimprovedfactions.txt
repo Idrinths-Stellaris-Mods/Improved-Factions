@@ -2,6 +2,7 @@ namespace idrinthimprovedfactions;
 country_event = {
     id = idrinthimprovedfactions.1
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
         every_country = {
             limit = { 
@@ -74,6 +75,7 @@ country_event = {
 pop_event {
     id = idrinthimprovedfactions.101
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     if = {
         limit = {
@@ -175,6 +177,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1011
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner {
     		add_idrinthimprovedfactions_influence_authoritarian = 1
@@ -193,6 +196,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1012
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner = {
     		add_idrinthimprovedfactions_influence_authoritarian = -1
@@ -205,6 +209,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.102
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     if = {
         limit = {
@@ -306,6 +311,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1021
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner {
     		add_idrinthimprovedfactions_influence_egalitarian = 1
@@ -324,6 +330,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1022
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner = {
     		add_idrinthimprovedfactions_influence_egalitarian = -1
@@ -336,6 +343,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.103
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     if = {
         limit = {
@@ -437,6 +445,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1031
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner {
     		add_idrinthimprovedfactions_influence_xenophob = 1
@@ -455,6 +464,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1032
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner = {
     		add_idrinthimprovedfactions_influence_xenophob = -1
@@ -467,6 +477,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.104
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     if = {
         limit = {
@@ -568,6 +579,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1041
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner {
     		add_idrinthimprovedfactions_influence_xenophile = 1
@@ -586,6 +598,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1042
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner = {
     		add_idrinthimprovedfactions_influence_xenophile = -1
@@ -598,6 +611,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.105
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     if = {
         limit = {
@@ -699,6 +713,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1051
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner {
     		add_idrinthimprovedfactions_influence_militarist = 1
@@ -717,6 +732,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1052
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner = {
     		add_idrinthimprovedfactions_influence_militarist = -1
@@ -729,6 +745,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.106
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     if = {
         limit = {
@@ -830,6 +847,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1061
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner {
     		add_idrinthimprovedfactions_influence_pacifist = 1
@@ -848,6 +866,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1062
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner = {
     		add_idrinthimprovedfactions_influence_pacifist = -1
@@ -860,6 +879,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.107
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     if = {
         limit = {
@@ -961,6 +981,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1071
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner {
     		add_idrinthimprovedfactions_influence_spiritualist = 1
@@ -979,6 +1000,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1072
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner = {
     		add_idrinthimprovedfactions_influence_spiritualist = -1
@@ -991,6 +1013,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.108
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     if = {
         limit = {
@@ -1092,6 +1115,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1081
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner {
     		add_idrinthimprovedfactions_influence_materialist = 1
@@ -1110,6 +1134,7 @@ pop_event {
 pop_event {
     id = idrinthimprovedfactions.1082
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
     	owner = {
     		add_idrinthimprovedfactions_influence_materialist = -1
