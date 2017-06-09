@@ -1,0 +1,48 @@
+idrinthimprovedfactions_influence_authoritarian = {
+	accumulative = yes
+	AI_category = unity
+	base_income = 0
+	tradable = no
+}
+idrinthimprovedfactions_influence_egalitarian = {
+	accumulative = yes
+	AI_category = unity
+	base_income = 0
+	tradable = no
+}
+idrinthimprovedfactions_influence_xenophobe = {
+	accumulative = yes
+	AI_category = unity
+	base_income = 0
+	tradable = no
+}
+idrinthimprovedfactions_influence_xenophile = {
+	accumulative = yes
+	AI_category = unity
+	base_income = 0
+	tradable = no
+}
+idrinthimprovedfactions_influence_militarist = {
+	accumulative = yes
+	AI_category = unity
+	base_income = 0
+	tradable = no
+}
+idrinthimprovedfactions_influence_pacifist = {
+	accumulative = yes
+	AI_category = unity
+	base_income = 0
+	tradable = no
+}
+idrinthimprovedfactions_influence_spiritualist = {
+	accumulative = yes
+	AI_category = unity
+	base_income = 0
+	tradable = no
+}
+idrinthimprovedfactions_influence_materialist = {
+	accumulative = yes
+	AI_category = unity
+	base_income = 0
+	tradable = no
+}
