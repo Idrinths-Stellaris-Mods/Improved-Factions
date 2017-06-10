@@ -1,13 +1,7 @@
-# small events + special resource generation
 on_monthly_pulse = {
-	events = {
-		idrinthimprovedfactions.1
-	}
-}
-
-# special resource related
-on_yearly_pulse = {
-	events = {
-		idrinthimprovedfactions.2
-	}
+    events = {
+        idrinthimprovedfactions.3 # starting chain
+        idrinthimprovedfactions.1 # small events + special resource generation
+        #idrinthimprovedfactions.2 # rewards
+    }
 }

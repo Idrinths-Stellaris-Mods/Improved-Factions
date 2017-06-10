@@ -1,516 +1,342 @@
-namespace idrinthimprovedfactions;
+namespace = idrinthimprovedfactions
 country_event = {
     id = idrinthimprovedfactions.2
     is_triggered_only = yes
+    hide_window = yes
     immediate = {
         every_country = {
             limit = { 
                 exists = capital_scope
+                has_event_chain = idrinthimprovedfactions_influence
             }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.201}
-            }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.202}
-            }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.203}
-            }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.204}
-            }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.205}
-            }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.206}
-            }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.207}
-            }
-            any_owned_planet = {
-                        panet_event = {id=idrinthimprovedfactions.208}
-            }
+            country_event={id=idrinthimprovedfactions.201}
+            country_event={id=idrinthimprovedfactions.202}
+            country_event={id=idrinthimprovedfactions.203}
+            country_event={id=idrinthimprovedfactions.204}
+            country_event={id=idrinthimprovedfactions.205}
+            country_event={id=idrinthimprovedfactions.206}
+            country_event={id=idrinthimprovedfactions.207}
+            country_event={id=idrinthimprovedfactions.208}
         }
     }
 }
 ###############
 # AUTHORITARIAN
 ###############
-planet_event = {
+country_event = {
     id = idrinthimprovedfactions.201
+    title = "idrinthimprovedfactions.201.name"
+    desc = "idrinthimprovedfactions.201.desc"
+    picture = unity_symbol
     is_triggered_only = yes
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence
+            counter = idrinthimprovedfactions_authoritarian
+        }
+    }
     immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 1000
-            }
+        random_owned_planet = {
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -1000
                     create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
+                        name = "NAME_Faction_Guard"
+                        owner = FROM
+                        species = FROM
                         type = "assault_army"
                     }
                 }
                 75 = {}
             }
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -500
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter="idrinthimprovedfactions_authoritarian"
+            amount = -1000
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_authoritarian > 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_authoritarian = -250
-                    create_army = {
-                        name = "NAME_Authoritarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
-        }
+    }
+    option = {
+        name = GREAT
     }
 }
 ###############
 # EGALITARIAN
 ###############
-planet_event = {
+country_event = {
     id = idrinthimprovedfactions.202
+    title = "idrinthimprovedfactions.202.name"
+    desc = "idrinthimprovedfactions.202.desc"
+    picture = unity_symbol
     is_triggered_only = yes
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence
+            counter = idrinthimprovedfactions_egalitarian
+        }
+    }
     immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_egalitarian > 1000
-            }
+        random_owned_planet = {
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_egalitarian = -1000
                     create_army = {
-                        name = "NAME_Egalitarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
+                        name = "NAME_Faction_Guard"
+                        owner = FROM
+                        species = FROM
                         type = "assault_army"
                     }
                 }
                 75 = {}
             }
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_egalitarian > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_egalitarian = -500
-                    create_army = {
-                        name = "NAME_Egalitarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter="idrinthimprovedfactions_egalitarian"
+            amount = -1000
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_egalitarian > 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_egalitarian = -250
-                    create_army = {
-                        name = "NAME_Egalitarian_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
-        }
+    }
+    option = {
+        name = GREAT
     }
 }
 ###############
 # XENOPHOBE
 ###############
-planet_event = {
+country_event = {
     id = idrinthimprovedfactions.203
+    title = "idrinthimprovedfactions.203.name"
+    desc = "idrinthimprovedfactions.203.desc"
+    picture = unity_symbol
     is_triggered_only = yes
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence
+            counter = idrinthimprovedfactions_xenophobe
+        }
+    }
     immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_xenophobe > 1000
-            }
+        random_owned_planet = {
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_xenophobe = -1000
                     create_army = {
-                        name = "NAME_Xenophobe_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
+                        name = "NAME_Faction_Guard"
+                        owner = FROM
+                        species = FROM
                         type = "assault_army"
                     }
                 }
                 75 = {}
             }
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_xenophob > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_xenophobe = -500
-                    create_army = {
-                        name = "NAME_Xenophobe_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter="idrinthimprovedfactions_xenophobe"
+            amount = -1000
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_xenophobe > 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_xenophobe = -250
-                    create_army = {
-                        name = "NAME_Xenophobe_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
-        }
+    }
+    option = {
+        name = GREAT
     }
 }
 ###############
 # XENOPHILE
 ###############
-planet_event = {
+country_event = {
     id = idrinthimprovedfactions.204
+    title = "idrinthimprovedfactions.204.name"
+    desc = "idrinthimprovedfactions.204.desc"
+    picture = unity_symbol
     is_triggered_only = yes
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence
+            counter = idrinthimprovedfactions_xenophile
+        }
+    }
     immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_xenophile > 1000
-            }
+        random_owned_planet = {
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_xenophile = -1000
                     create_army = {
-                        name = "NAME_Xenophile_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
+                        name = "NAME_Faction_Guard"
+                        owner = FROM
+                        species = FROM
                         type = "assault_army"
                     }
                 }
                 75 = {}
             }
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_xenophile > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_xenophile = -500
-                    create_army = {
-                        name = "NAME_Xenophile_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter="idrinthimprovedfactions_xenophile"
+            amount = -1000
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_xenophile > 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_xenophile = -250
-                    create_army = {
-                        name = "NAME_Xenophile_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
-        }
+    }
+    option = {
+        name = GREAT
     }
 }
 ###############
 # MILITARIST
 ###############
-planet_event = {
+country_event = {
     id = idrinthimprovedfactions.205
+    title = "idrinthimprovedfactions.205.name"
+    desc = "idrinthimprovedfactions.205.desc"
+    picture = unity_symbol
     is_triggered_only = yes
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence
+            counter = idrinthimprovedfactions_militarist
+        }
+    }
     immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_militarist > 1000
-            }
+        random_owned_planet = {
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_militarist = -1000
                     create_army = {
-                        name = "NAME_Militarist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
+                        name = "NAME_Faction_Guard"
+                        owner = FROM
+                        species = FROM
                         type = "assault_army"
                     }
                 }
                 75 = {}
             }
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_militarist > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_militarist = -500
-                    create_army = {
-                        name = "NAME_Militarist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter="idrinthimprovedfactions_militarist"
+            amount = -1000
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_militarist> 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_militarist = -250
-                    create_army = {
-                        name = "NAME_Militarist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
-        }
+    }
+    option = {
+        name = GREAT
     }
 }
 ###############
 # PACIFIST
 ###############
-planet_event = {
+country_event = {
     id = idrinthimprovedfactions.206
+    title = "idrinthimprovedfactions.206.name"
+    desc = "idrinthimprovedfactions.206.desc"
+    picture = unity_symbol
     is_triggered_only = yes
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence
+            counter = idrinthimprovedfactions_pacifist
+        }
+    }
     immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_pacifist > 1000
-            }
+        random_owned_planet = {
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_pacifist = -1000
                     create_army = {
-                        name = "NAME_Pacifist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
+                        name = "NAME_Faction_Guard"
+                        owner = FROM
+                        species = FROM
                         type = "assault_army"
                     }
                 }
                 75 = {}
             }
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_pacifist > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_pacifist = -500
-                    create_army = {
-                        name = "NAME_Pacifist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter="idrinthimprovedfactions_pacifist"
+            amount = -1000
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_pacifist > 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_pacifist = -250
-                    create_army = {
-                        name = "NAME_Pacifist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
-        }
+    }
+    option = {
+        name = GREAT
     }
 }
 ###############
 # SPIRITUALIST
 ###############
-planet_event = {
+country_event = {
     id = idrinthimprovedfactions.207
+    title = "idrinthimprovedfactions.207.name"
+    desc = "idrinthimprovedfactions.207.desc"
+    picture = unity_symbol
     is_triggered_only = yes
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence
+            counter = idrinthimprovedfactions_spiritualist
+        }
+    }
     immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_spiritualist > 1000
-            }
+        random_owned_planet = {
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_spiritualist = -1000
                     create_army = {
-                        name = "NAME_Spiritualist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
+                        name = "NAME_Faction_Guard"
+                        owner = FROM
+                        species = FROM
                         type = "assault_army"
                     }
                 }
                 75 = {}
             }
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_spiritualist > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_spiritualist = -500
-                    create_army = {
-                        name = "NAME_Spiritualist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter="idrinthimprovedfactions_spiritualist"
+            amount = -1000
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_spiritualist > 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_spiritualist = -250
-                    create_army = {
-                        name = "NAME_Spiritualist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
-        }
+    }
+    option = {
+        name = GREAT
     }
 }
 ###############
 # MATERIALIST
 ###############
-planet_event = {
+country_event = {
     id = idrinthimprovedfactions.208
+    title = "idrinthimprovedfactions.208.name"
+    desc = "idrinthimprovedfactions.208.desc"
+    picture = unity_symbol
     is_triggered_only = yes
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence
+            counter = idrinthimprovedfactions_materialist
+        }
+    }
     immediate = {
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_materialist > 1000
-            }
+        random_owned_planet = {
             random_list = {
                 25 = {
-                    add_idrinthimprovedfactions_influence_materialist = -1000
                     create_army = {
-                        name = "NAME_Materialist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
+                        name = "NAME_Faction_Guard"
+                        owner = FROM
+                        species = FROM
                         type = "assault_army"
                     }
                 }
                 75 = {}
             }
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_materialist > 500
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_materialist = -500
-                    create_army = {
-                        name = "NAME_Materialist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter="idrinthimprovedfactions_materialist"
+            amount = -1000
         }
-        if = {
-            limit = {
-                idrinthimprovedfactions_influence_materialist > 250
-            }
-            random_list = {
-                25 = {
-                    add_idrinthimprovedfactions_influence_materialist = -250
-                    create_army = {
-                        name = "NAME_Materialist_Guard"
-                        owner = FROMFROM
-                        species = FROMFROM
-                        type = "assault_army"
-                    }
-                }
-                75 = {}
-            }
-        }
+    }
+    option = {
+        name = GREAT
     }
 }

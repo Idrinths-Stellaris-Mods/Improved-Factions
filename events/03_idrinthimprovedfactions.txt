@@ -1,0 +1,31 @@
+namespace = idrinthimprovedfactions
+country_event = {
+    id = idrinthimprovedfactions.3
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        every_country = {
+            limit = { 
+                exists = capital_scope
+                NOT = {has_event_chain = idrinthimprovedfactions_influence}
+            }
+            country_event={id=idrinthimprovedfactions.301}
+        }
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.301
+    title = "idrinthimprovedfactions.301.name"
+    desc = "idrinthimprovedfactions.301.desc"
+    picture = unity_symbol
+    is_triggered_only = yes
+    immediate = {
+        begin_event_chain = {
+            event_chain = "idrinthimprovedfactions_influence"
+            target = ROOT
+        }
+    }
+    option = {
+        name = OK
+    }
+}
