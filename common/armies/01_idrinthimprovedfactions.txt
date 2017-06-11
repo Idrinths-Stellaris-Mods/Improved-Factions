@@ -1,0 +1,56 @@
+pacifist_army = {
+	damage = 0.1
+	health = 2.5
+	morale = 2.5
+	morale_damage = 1.25
+	assault = yes
+	time = 0
+	maintenance = 0
+	icon_frame = 2
+	cost = {}
+	potential = {
+		always=no
+	}
+}
+authoritarian_army = {
+	damage = 1.25
+	health = 1.25
+	morale = 1.25
+	morale_damage = 3
+	assault = yes
+	time = 0
+	maintenance = 0
+	icon_frame = 2
+	cost = {}
+	potential = {
+		always=no
+	}
+}
+xenophobe_army = {
+	damage = 2
+	health = 1.25
+	morale = 1.25
+	morale_damage = 2
+	assault = yes
+	time = 0
+	maintenance = 0
+	icon_frame = 2
+	cost = {}
+	potential = {
+		always=no
+	}
+}
+spiritualist_army = {
+	damage = 2
+	health = 1.25
+	morale = 2
+	morale_damage = 1.25
+	assault = yes
+	time = 0
+	maintenance = 0
+	icon_frame = 2
+	cost = {}
+	potential = {
+		always=no
+	}
+}

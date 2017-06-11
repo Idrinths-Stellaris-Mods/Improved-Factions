@@ -7,6 +7,7 @@ country_event = {
         every_country = {
             limit = { 
                 exists = capital_scope
+                has_event_chain = idrinthimprovedfactions_influence
             }
             every_owned_pop = {
                 if = {
@@ -69,6 +70,46 @@ pop_event = {
     is_triggered_only = yes
     hide_window = yes
     immediate = {
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter = "idrinthimprovedfactions_authoritarian"
+            amount = -1
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter = "idrinthimprovedfactions_egalitarian"
+            amount = -1
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter = "idrinthimprovedfactions_militarist"
+            amount = -1
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter = "idrinthimprovedfactions_pacifist"
+            amount = -1
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter = "idrinthimprovedfactions_xenophobe"
+            amount = -1
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter = "idrinthimprovedfactions_xenophile"
+            amount = -1
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter = "idrinthimprovedfactions_spiritualist"
+            amount = -1
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter = "idrinthimprovedfactions_materialist"
+            amount = -1
+        }
         if = {
             limit = {
                 happiness < 0.01

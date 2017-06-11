@@ -42,9 +42,9 @@ country_event = {
     }
 }
 country_event = {
-    id = idrinthimprovedfactions.211
-    title = "idrinthimprovedfactions.211.name"
-    desc = "idrinthimprovedfactions.211.desc"
+    id = idrinthimprovedfactions.215
+    title = "idrinthimprovedfactions.215.name"
+    desc = "idrinthimprovedfactions.215.desc"
     picture = unity_symbol    
     trigger = {
         has_event_chain = idrinthimprovedfactions_influence_1
@@ -55,11 +55,16 @@ country_event = {
     }
     immediate = {
         random_owned_planet = {
-            create_army = {
-                name = "NAME_Faction_Guard"
-                owner = FROM
-                species = FROM
-                type = "assault_army"
+            create_fleet = {
+                effect = {
+                    set_owner = FROM
+                    create_ship = {
+                        name = random
+                        random_existing_design = idrinthimprovedfactions_militarist_corvette
+                    }
+                    set_fleet_stance = evasive				
+                    set_location = prev
+                }		
             }
         }
         add_modifier = {

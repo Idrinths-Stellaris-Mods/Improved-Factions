@@ -1,0 +1,177 @@
+utility_component_template = {
+	key = "idrinthimprovedfactions_xenophile_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_pregoc"
+	icon_frame = 1
+	power = 0
+	cost = 0
+	ship_behavior = "battleship_sniper"
+	
+	ai_weight = {
+		weight = 150
+	}
+	
+	friendly_aura = {
+		name = "aura_idrinthimprovedfactions_xenophile"
+		radius = 50
+		apply_on = ships
+		
+		stack_info = {
+			id = idrinthimprovedfactions_xenophile
+			priority = 20
+		}
+		
+		modifier = {
+			ship_sensor_range_mult = 1
+			ship_evasion_add = 1
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	class_restriction = { shipclass_idrinthimprovedfactions }
+	size_restriction = { idrinthimprovedfactions_xenophile_corvette }
+	component_set = "combat_computers"
+}
+utility_component_template = {
+	key = "idrinthimprovedfactions_materialist_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_pregoc"
+	icon_frame = 1
+	power = 0
+	cost = 0
+	ship_behavior = "battleship_sniper"
+	
+	ai_weight = {
+		weight = 150
+	}
+	
+	friendly_aura = {
+		name = "aura_idrinthimprovedfactions_materialist"
+		radius = 50
+		apply_on = ships
+		
+		stack_info = {
+			id = idrinthimprovedfactions_materialist
+			priority = 20
+		}
+		
+		modifier = {
+			ship_upkeep_mult = -0.25
+			ship_hitpoints_mult = 0.25
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	class_restriction = { shipclass_idrinthimprovedfactions }
+	size_restriction = { idrinthimprovedfactions_materialist_corvette }
+	component_set = "combat_computers"
+}
+utility_component_template = {
+	key = "idrinthimprovedfactions_egalitarian_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_pregoc"
+	icon_frame = 1
+	power = 0
+	cost = 0
+	ship_behavior = "battleship_sniper"
+	
+	ai_weight = {
+		weight = 150
+	}
+	
+	friendly_aura = {
+		name = "aura_idrinthimprovedfactions_egalitarian"
+		radius = 50
+		apply_on = ships
+		
+		stack_info = {
+			id = idrinthimprovedfactions_egalitarian
+			priority = 20
+		}
+		
+		modifier = {
+			ship_upkeep_mult = -0.1
+			ship_shield_hp_mult = 0.25
+			ship_accuracy_mult = 0.1
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	class_restriction = { shipclass_idrinthimprovedfactions }
+	size_restriction = { idrinthimprovedfactions_egalitarian_corvette }
+	component_set = "combat_computers"
+}
+utility_component_template = {
+	key = "idrinthimprovedfactions_militarist_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_pregoc"
+	icon_frame = 1
+	power = 0
+	cost = 0
+	ship_behavior = "battleship_sniper"
+	
+	ai_weight = {
+		weight = 150
+	}
+	
+	friendly_aura = {
+		name = "aura_idrinthimprovedfactions_egalitarian"
+		radius = 50
+		apply_on = ships
+		
+		stack_info = {
+			id = idrinthimprovedfactions_egalitarian
+			priority = 20
+		}
+		
+		modifier = {
+			ship_weapon_range_mult = 0.2
+			ship_fire_rate_mult= 0.2
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	class_restriction = { shipclass_idrinthimprovedfactions }
+	size_restriction = { idrinthimprovedfactions_militarist_corvette }
+	component_set = "combat_computers"
+}

@@ -1,0 +1,80 @@
+ship_section_template = {
+	key = "idrinthimprovedfactions_civilian_MID_S3"
+	ship_size = idrinthimprovedfactions_xenophile_corvette
+	ship_size = idrinthimprovedfactions_materialist_corvette
+	ship_size = idrinthimprovedfactions_egalitarian_corvette
+	fits_on_slot = mid
+	entity = "corvette_S3_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	# Guns
+	ai_weight = {
+		factor = 1
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	
+	small_utility_slots = 5
+	medium_utility_slots = 2
+	aux_utility_slots = 2
+	
+	cost = 0
+}
+ship_section_template = {
+	key = "idrinthimprovedfactions_militarist_MID_S3"
+	ship_size = idrinthimprovedfactions_militarist_corvette
+	fits_on_slot = mid
+	entity = "corvette_S3_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	# Guns
+	ai_weight = {
+		factor = 1
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_04"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	
+	small_utility_slots = 4
+	medium_utility_slots = 2
+	aux_utility_slots = 1
+	
+	cost = 0
+}

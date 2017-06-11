@@ -56,10 +56,9 @@ country_event = {
     immediate = {
         random_owned_planet = {
             create_army = {
-                name = "NAME_Faction_Guard"
                 owner = FROM
                 species = FROM
-                type = "assault_army"
+                type = "spiritualist_army"
             }
         }
         add_modifier = {

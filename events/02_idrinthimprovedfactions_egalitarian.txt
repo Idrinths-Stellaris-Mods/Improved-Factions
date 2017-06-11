@@ -55,11 +55,16 @@ country_event = {
     }
     immediate = {
         random_owned_planet = {
-            create_army = {
-                name = "NAME_Faction_Guard"
-                owner = FROM
-                species = FROM
-                type = "assault_army"
+            create_fleet = {
+                effect = {
+                    set_owner = FROM
+                    create_ship = {
+                        name = random
+                        random_existing_design = idrinthimprovedfactions_militarist_corvette
+                    }
+                    set_fleet_stance = evasive				
+                    set_location = prev
+                }		
             }
         }
         add_modifier = {
