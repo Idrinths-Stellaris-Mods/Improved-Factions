@@ -1,0 +1,78 @@
+namespace = idrinthimprovedfactions
+
+country_event = {
+    id = idrinthimprovedfactions.203
+    title = "idrinthimprovedfactions.203.name"
+    desc = "idrinthimprovedfactions.203.desc"
+    hide_window = yes
+    picture = unity_symbol    
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence
+            counter = idrinthimprovedfactions_xenophobe
+        }
+    }
+    immediate = {
+        random_list = {
+            1 = {
+                add_modifier = {
+                    modifier = idrinthimprovedfactions_happy_xenophobe
+                    days = 30
+                }
+            }
+            9 = {
+                add_event_chain_counter = {
+                    event_chain = "idrinthimprovedfactions_influence_1"
+                    counter="idrinthimprovedfactions_xenophobe"
+                    amount = 1
+                }
+            }
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter="idrinthimprovedfactions_xenophobe"
+            amount = -1000
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence_1"
+            counter="idrinthimprovedfactions_xenophobe"
+            amount = 1
+        }
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.213
+    title = "idrinthimprovedfactions.213.name"
+    desc = "idrinthimprovedfactions.213.desc"
+    picture = unity_symbol    
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence_1
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_1
+            counter = idrinthimprovedfactions_xenophobe
+        }
+    }
+    immediate = {
+        random_owned_planet = {
+            create_army = {
+                name = "NAME_Faction_Guard"
+                owner = FROM
+                species = FROM
+                type = "assault_army"
+            }
+        }
+        add_modifier = {
+            modifier = idrinthimprovedfactions_happy_xenophobe_1
+            days = 300
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence_1"
+            counter="idrinthimprovedfactions_xenophobe"
+            amount = -1000
+        }
+    }
+    option = {
+        name = GREAT
+    }
+}

@@ -1,0 +1,78 @@
+namespace = idrinthimprovedfactions
+
+country_event = {
+    id = idrinthimprovedfactions.207
+    title = "idrinthimprovedfactions.207.name"
+    desc = "idrinthimprovedfactions.207.desc"
+    hide_window = yes
+    picture = unity_symbol    
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence
+            counter = idrinthimprovedfactions_spiritualist
+        }
+    }
+    immediate = {
+        random_list = {
+            1 = {
+                add_modifier = {
+                    modifier = idrinthimprovedfactions_happy_spiritualist
+                    days = 30
+                }
+            }
+            9 = {
+                add_event_chain_counter = {
+                    event_chain = "idrinthimprovedfactions_influence_1"
+                    counter="idrinthimprovedfactions_spiritualist"
+                    amount = 1
+                }
+            }
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter="idrinthimprovedfactions_spiritualist"
+            amount = -1000
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence_1"
+            counter="idrinthimprovedfactions_spiritualist"
+            amount = 1
+        }
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.217
+    title = "idrinthimprovedfactions.217.name"
+    desc = "idrinthimprovedfactions.217.desc"
+    picture = unity_symbol    
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence_1
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_1
+            counter = idrinthimprovedfactions_spiritualist
+        }
+    }
+    immediate = {
+        random_owned_planet = {
+            create_army = {
+                name = "NAME_Faction_Guard"
+                owner = FROM
+                species = FROM
+                type = "assault_army"
+            }
+        }
+        add_modifier = {
+            modifier = idrinthimprovedfactions_happy_spiritualist_1
+            days = 300
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence_1"
+            counter="idrinthimprovedfactions_spiritualist"
+            amount = -1000
+        }
+    }
+    option = {
+        name = GREAT
+    }
+}

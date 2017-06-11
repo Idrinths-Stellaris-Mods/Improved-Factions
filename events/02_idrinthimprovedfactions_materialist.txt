@@ -1,0 +1,78 @@
+namespace = idrinthimprovedfactions
+
+country_event = {
+    id = idrinthimprovedfactions.208
+    title = "idrinthimprovedfactions.208.name"
+    desc = "idrinthimprovedfactions.208.desc"
+    hide_window = yes
+    picture = unity_symbol    
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence
+            counter = idrinthimprovedfactions_materialist
+        }
+    }
+    immediate = {
+        random_list = {
+            1 = {
+                add_modifier = {
+                    modifier = idrinthimprovedfactions_happy_materialist
+                    days = 30
+                }
+            }
+            9 = {
+                add_event_chain_counter = {
+                    event_chain = "idrinthimprovedfactions_influence_1"
+                    counter="idrinthimprovedfactions_materialist"
+                    amount = 1
+                }
+            }
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence"
+            counter="idrinthimprovedfactions_materialist"
+            amount = -1000
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence_1"
+            counter="idrinthimprovedfactions_materialist"
+            amount = 1
+        }
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.218
+    title = "idrinthimprovedfactions.218.name"
+    desc = "idrinthimprovedfactions.218.desc"
+    picture = unity_symbol    
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence_1
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_1
+            counter = idrinthimprovedfactions_materialist
+        }
+    }
+    immediate = {
+        random_owned_planet = {
+            create_army = {
+                name = "NAME_Faction_Guard"
+                owner = FROM
+                species = FROM
+                type = "assault_army"
+            }
+        }
+        add_modifier = {
+            modifier = idrinthimprovedfactions_happy_materialist_1
+            days = 300
+        }
+        add_event_chain_counter = {
+            event_chain = "idrinthimprovedfactions_influence_1"
+            counter="idrinthimprovedfactions_materialist"
+            amount = -1000
+        }
+    }
+    option = {
+        name = GREAT
+    }
+}

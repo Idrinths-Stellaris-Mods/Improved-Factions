@@ -1,4 +1,4 @@
-name="Idrinth: Improved Factions"
+name="Idrinth: Stellaris Improved Factions"
 path="mod/idrinth-stellaris-improved-factions"
 tags={
 	"Factions"

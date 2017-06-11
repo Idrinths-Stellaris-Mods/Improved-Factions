@@ -28,3 +28,33 @@ idrinthimprovedfactions_influence = {
 		}
 	}
 }
+idrinthimprovedfactions_influence_1 = {
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
+	picture = GFX_evt_archaeological_dig
+	counter = {
+		idrinthimprovedfactions_authoritarian = {
+                    max=1000
+		}
+		idrinthimprovedfactions_egalitarian = {
+                    max=1000
+		}
+		idrinthimprovedfactions_xenophobe = {
+                    max=1000
+		}
+		idrinthimprovedfactions_xenophile = {
+                    max=1000
+		}
+		idrinthimprovedfactions_militarist = {
+                    max=1000
+		}
+		idrinthimprovedfactions_pacifist = {
+                    max=1000
+		}
+		idrinthimprovedfactions_spiritualist = {
+                    max=1000
+		}
+		idrinthimprovedfactions_materialist = {
+                    max=1000
+		}
+	}
+}

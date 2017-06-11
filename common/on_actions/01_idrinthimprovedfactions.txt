@@ -1,7 +1,0 @@
-on_monthly_pulse = {
-    events = {
-        idrinthimprovedfactions.3 # starting chain
-        idrinthimprovedfactions.1 # small events + special resource generation
-        #idrinthimprovedfactions.2 # rewards
-    }
-}

@@ -2,8 +2,7 @@ namespace = idrinthimprovedfactions
 
 country_event = {
     id = idrinthimprovedfactions.1
-    is_triggered_only = yes
-    #hide_window = yes
+    hide_window = yes
     immediate = {
         every_country = {
             limit = { 
@@ -179,15 +178,6 @@ pop_event = {
                 counter = "idrinthimprovedfactions_authoritarian"
                 amount = 1
             }
-            random_list = {
-                1 = {
-                    add_modifier = {
-                        modifier = idrinthimprovedfactions_happy_authoritarian
-                        days = 120
-                    }
-                }
-                19 = {}
-            }
         }
     }
 }
@@ -321,15 +311,6 @@ pop_event = {
                 event_chain = "idrinthimprovedfactions_influence"
                 counter = "idrinthimprovedfactions_egalitarian"
                 amount = 1
-            }
-            random_list = {
-                1 = {
-                    add_modifier = {
-                        modifier = idrinthimprovedfactions_happy_egalitarian
-                        days = 120
-                    }
-                }
-                19 = {}
             }
         }
     }
@@ -465,15 +446,6 @@ pop_event = {
                 counter = "idrinthimprovedfactions_xenophobe"
                 amount = 1
             }
-            random_list = {
-                1 = {
-                    add_modifier = {
-                        modifier = idrinthimprovedfactions_happy_xenophobe
-                        days = 120
-                    }
-                }
-                19 = {}
-            }
         }
     }
 }
@@ -607,15 +579,6 @@ pop_event = {
                 event_chain = "idrinthimprovedfactions_influence"
                 counter = "idrinthimprovedfactions_xenophile"
                 amount = 1
-            }
-            random_list = {
-                1 = {
-                    add_modifier = {
-                        modifier = idrinthimprovedfactions_happy_xenophile
-                        days = 120
-                    }
-                }
-                19 = {}
             }
         }
     }
@@ -751,15 +714,6 @@ pop_event = {
                 counter = "idrinthimprovedfactions_militarist"
                 amount = 1
             }
-            random_list = {
-                1 = {
-                    add_modifier = {
-                        modifier = idrinthimprovedfactions_happy_militarist
-                        days = 120
-                    }
-                }
-                19 = {}
-            }
         }
     }
 }
@@ -893,15 +847,6 @@ pop_event = {
                 event_chain = "idrinthimprovedfactions_influence"
                 counter = "idrinthimprovedfactions_pacifist"
                 amount = 1
-            }
-            random_list = {
-                1 = {
-                    add_modifier = {
-                        modifier = idrinthimprovedfactions_happy_pacifist
-                        days = 120
-                    }
-                }
-                19 = {}
             }
         }
     }
@@ -1037,15 +982,6 @@ pop_event = {
                 counter = "idrinthimprovedfactions_spiritualist"
                 amount = 1
             }
-            random_list = {
-                1 = {
-                    add_modifier = {
-                        modifier = idrinthimprovedfactions_happy_spiritualist
-                        days = 120
-                    }
-                }
-                19 = {}
-            }
         }
     }
 }
@@ -1179,15 +1115,6 @@ pop_event = {
                 event_chain = "idrinthimprovedfactions_influence"
                 counter = "idrinthimprovedfactions_materialist"
                 amount = 1
-            }
-            random_list = {
-                1 = {
-                    add_modifier = {
-                        modifier = idrinthimprovedfactions_happy_materialist
-                        days = 120
-                    }
-                }
-                19 = {}
             }
         }
     }
