@@ -1,0 +1,8 @@
+# preventing ships from being build
+tech_idrinthimprovedfactions_influence = {
+    cost = 0
+    area = society
+    category = { military_theory }
+    tier = 0
+    weight=0
+}

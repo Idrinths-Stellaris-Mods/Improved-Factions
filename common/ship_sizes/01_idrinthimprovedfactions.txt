@@ -18,7 +18,7 @@ idrinthimprovedfactions_xenophile_corvette = {
     fleet_slot_size = 1
     components_add_to_cost = no
     enable_default_design = yes
-    prerequisites = {  }
+    prerequisites = { tech_idrinthimprovedfactions_influence }
     section_slots = { "mid" = { locator = "part1" } }
     class = shipclass_idrinthimprovedfactions
     is_designable = no
@@ -49,7 +49,7 @@ idrinthimprovedfactions_materialist_corvette = {
     fleet_slot_size = 1
     components_add_to_cost = no	
     enable_default_design = yes
-    prerequisites = {  }
+    prerequisites = { tech_idrinthimprovedfactions_influence }
     section_slots = { "mid" = { locator = "part1" } }
     class = shipclass_idrinthimprovedfactions
     is_designable = no
@@ -80,7 +80,7 @@ idrinthimprovedfactions_egalitarian_corvette = {
     fleet_slot_size = 1
     components_add_to_cost = no	
     enable_default_design = yes
-    prerequisites = {  }
+    prerequisites = { tech_idrinthimprovedfactions_influence }
     section_slots = { "mid" = { locator = "part1" } }
     class = shipclass_idrinthimprovedfactions
     is_designable = no
@@ -111,7 +111,7 @@ idrinthimprovedfactions_militarist_corvette = {
     fleet_slot_size = 1
     components_add_to_cost = no	
     enable_default_design = yes
-    prerequisites = {  }
+    prerequisites = { tech_idrinthimprovedfactions_influence }
     section_slots = { "mid" = { locator = "part1" } }
     class = shipclass_idrinthimprovedfactions
     is_designable = no
