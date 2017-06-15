@@ -2,15 +2,12 @@ namespace = idrinthimprovedfactions
 
 country_event = {
     id = idrinthimprovedfactions.205
-    title = "idrinthimprovedfactions.205.name"
-    desc = "idrinthimprovedfactions.205.desc"
     hide_window = yes
-    picture = unity_symbol    
     trigger = {
-        has_event_chain = idrinthimprovedfactions_influence
+        has_event_chain = idrinthimprovedfactions_influence_militarist
         has_completed_event_chain_counter = {
-            event_chain = idrinthimprovedfactions_influence
-            counter = idrinthimprovedfactions_militarist
+            event_chain = idrinthimprovedfactions_influence_militarist
+            counter = idrinthimprovedfactions_positive
         }
     }
     immediate = {
@@ -23,34 +20,35 @@ country_event = {
             }
             9 = {
                 add_event_chain_counter = {
-                    event_chain = "idrinthimprovedfactions_influence_1"
-                    counter="idrinthimprovedfactions_militarist"
+                    event_chain = idrinthimprovedfactions_influence_militarist
+                    counter=idrinthimprovedfactions_positive_1
                     amount = 1
                 }
             }
+            10 = {}
         }
         add_event_chain_counter = {
-            event_chain = "idrinthimprovedfactions_influence"
-            counter="idrinthimprovedfactions_militarist"
-            amount = -1000
+            event_chain = idrinthimprovedfactions_influence_militarist
+            counter=idrinthimprovedfactions_positive
+            amount = -9999
         }
         add_event_chain_counter = {
-            event_chain = "idrinthimprovedfactions_influence_1"
-            counter="idrinthimprovedfactions_militarist"
+            event_chain = idrinthimprovedfactions_influence_militarist
+            counter=idrinthimprovedfactions_positive_1
             amount = 1
         }
     }
 }
 country_event = {
     id = idrinthimprovedfactions.215
-    title = "idrinthimprovedfactions.215.name"
-    desc = "idrinthimprovedfactions.215.desc"
+    title = idrinthimprovedfactions.215.name
+    desc = idrinthimprovedfactions.215.desc
     picture = unity_symbol    
     trigger = {
-        has_event_chain = idrinthimprovedfactions_influence_1
+        has_event_chain = idrinthimprovedfactions_influence_militarist
         has_completed_event_chain_counter = {
-            event_chain = idrinthimprovedfactions_influence_1
-            counter = idrinthimprovedfactions_militarist
+            event_chain = idrinthimprovedfactions_influence_militarist
+            counter = idrinthimprovedfactions_positive_1
         }
     }
     immediate = {
@@ -72,12 +70,78 @@ country_event = {
             days = 300
         }
         add_event_chain_counter = {
-            event_chain = "idrinthimprovedfactions_influence_1"
-            counter="idrinthimprovedfactions_militarist"
+            event_chain = idrinthimprovedfactions_influence_militarist
+            counter=idrinthimprovedfactions_positive_1
             amount = -1000
         }
     }
     option = {
         name = GREAT
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.245
+    title = idrinthimprovedfactions.245.name
+    desc = idrinthimprovedfactions.245.desc
+    picture = unity_symbol    
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence_militarist
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_militarist
+            counter = idrinthimprovedfactions_negative_1
+        }
+    }
+    immediate = {
+        random_owned_planet = {
+            add_modifier = {
+                modifier = idrinthimprovedfactions_unhappy_militarist_planet_1
+                days = 720
+            }
+        }
+        add_modifier = {
+            modifier = idrinthimprovedfactions_unhappy_militarist_1
+            days = 240
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_militarist
+            counter=idrinthimprovedfactions_negative_1
+            amount = -1000
+        }
+    }
+    option = {
+        name = SCARY
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.225
+    hide_window = yes
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence_militarist
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_militarist
+            counter = idrinthimprovedfactions_negative
+        }
+    }
+    immediate = {
+        random_owned_planet = {
+            add_modifier = {
+                modifier = idrinthimprovedfactions_unhappy_militarist_planet
+                days = 120
+            }
+        }
+        add_modifier = {
+            modifier = idrinthimprovedfactions_unhappy_militarist
+            days = 60
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_militarist
+            counter=idrinthimprovedfactions_negative
+            amount = -9999
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_militarist
+            counter=idrinthimprovedfactions_negative_1
+            amount = 1
+        }
     }
 }

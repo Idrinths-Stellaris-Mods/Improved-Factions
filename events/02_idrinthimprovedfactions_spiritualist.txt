@@ -2,15 +2,12 @@ namespace = idrinthimprovedfactions
 
 country_event = {
     id = idrinthimprovedfactions.207
-    title = "idrinthimprovedfactions.207.name"
-    desc = "idrinthimprovedfactions.207.desc"
     hide_window = yes
-    picture = unity_symbol    
     trigger = {
-        has_event_chain = idrinthimprovedfactions_influence
+        has_event_chain = idrinthimprovedfactions_influence_spiritualist
         has_completed_event_chain_counter = {
-            event_chain = idrinthimprovedfactions_influence
-            counter = idrinthimprovedfactions_spiritualist
+            event_chain = idrinthimprovedfactions_influence_spiritualist
+            counter = idrinthimprovedfactions_positive
         }
     }
     immediate = {
@@ -23,34 +20,35 @@ country_event = {
             }
             9 = {
                 add_event_chain_counter = {
-                    event_chain = "idrinthimprovedfactions_influence_1"
-                    counter="idrinthimprovedfactions_spiritualist"
+                    event_chain = idrinthimprovedfactions_influence_spiritualist
+                    counter=idrinthimprovedfactions_positive_1
                     amount = 1
                 }
             }
+            10 = {}
         }
         add_event_chain_counter = {
-            event_chain = "idrinthimprovedfactions_influence"
-            counter="idrinthimprovedfactions_spiritualist"
-            amount = -1000
+            event_chain = idrinthimprovedfactions_influence_spiritualist
+            counter=idrinthimprovedfactions_positive
+            amount = -9999
         }
         add_event_chain_counter = {
-            event_chain = "idrinthimprovedfactions_influence_1"
-            counter="idrinthimprovedfactions_spiritualist"
+            event_chain = idrinthimprovedfactions_influence_spiritualist
+            counter=idrinthimprovedfactions_positive_1
             amount = 1
         }
     }
 }
 country_event = {
     id = idrinthimprovedfactions.217
-    title = "idrinthimprovedfactions.217.name"
-    desc = "idrinthimprovedfactions.217.desc"
+    title = idrinthimprovedfactions.217.name
+    desc = idrinthimprovedfactions.217.desc
     picture = unity_symbol    
     trigger = {
-        has_event_chain = idrinthimprovedfactions_influence_1
+        has_event_chain = idrinthimprovedfactions_influence_spiritualist
         has_completed_event_chain_counter = {
-            event_chain = idrinthimprovedfactions_influence_1
-            counter = idrinthimprovedfactions_spiritualist
+            event_chain = idrinthimprovedfactions_influence_spiritualist
+            counter = idrinthimprovedfactions_positive_1
         }
     }
     immediate = {
@@ -58,7 +56,7 @@ country_event = {
             create_army = {
                 owner = FROM
                 species = FROM
-                type = "spiritualist_army"
+                type = spiritualist_army
             }
         }
         add_modifier = {
@@ -66,12 +64,78 @@ country_event = {
             days = 300
         }
         add_event_chain_counter = {
-            event_chain = "idrinthimprovedfactions_influence_1"
-            counter="idrinthimprovedfactions_spiritualist"
+            event_chain = idrinthimprovedfactions_influence_spiritualist
+            counter=idrinthimprovedfactions_positive_1
             amount = -1000
         }
     }
     option = {
         name = GREAT
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.247
+    title = idrinthimprovedfactions.247.name
+    desc = idrinthimprovedfactions.247.desc
+    picture = unity_symbol    
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence_spiritualist
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_spiritualist
+            counter = idrinthimprovedfactions_negative_1
+        }
+    }
+    immediate = {
+        random_owned_planet = {
+            add_modifier = {
+                modifier = idrinthimprovedfactions_unhappy_spiritualist_planet_1
+                days = 720
+            }
+        }
+        add_modifier = {
+            modifier = idrinthimprovedfactions_unhappy_spiritualist_1
+            days = 240
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_spiritualist
+            counter=idrinthimprovedfactions_negative_1
+            amount = -1000
+        }
+    }
+    option = {
+        name = SCARY
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.227
+    hide_window = yes
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence_spiritualist
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_spiritualist
+            counter = idrinthimprovedfactions_negative
+        }
+    }
+    immediate = {
+        random_owned_planet = {
+            add_modifier = {
+                modifier = idrinthimprovedfactions_unhappy_spiritualist_planet
+                days = 120
+            }
+        }
+        add_modifier = {
+            modifier = idrinthimprovedfactions_unhappy_spiritualist
+            days = 60
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_spiritualist
+            counter=idrinthimprovedfactions_negative
+            amount = -9999
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_spiritualist
+            counter=idrinthimprovedfactions_negative_1
+            amount = 1
+        }
     }
 }

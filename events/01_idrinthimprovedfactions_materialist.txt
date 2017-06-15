@@ -1,0 +1,228 @@
+namespace = idrinthimprovedfactions
+pop_event = {
+    id = idrinthimprovedfactions.108
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        if = {
+            limit = {
+                happiness < 0.01
+            }
+            pop_event = {id=idrinthimprovedfactions.1082}
+        }
+        if = {
+            limit = {
+                happiness < 0.05
+            }
+            pop_event = {id=idrinthimprovedfactions.1082}
+        }
+        if = {
+            limit = {
+                happiness < 0.10
+            }
+            pop_event = {id=idrinthimprovedfactions.1082}
+        }
+        if = {
+            limit = {
+                happiness < 0.16
+            }
+            pop_event = {id=idrinthimprovedfactions.1082}
+        }
+        if = {
+            limit = {
+                happiness < 0.23
+            }
+            pop_event = {id=idrinthimprovedfactions.1082}
+        }
+        if = {
+            limit = {
+                happiness < 0.31
+            }
+            pop_event = {id=idrinthimprovedfactions.1082}
+        }
+        if = {
+            limit = {
+                happiness < 0.4
+            }
+            pop_event = {id=idrinthimprovedfactions.1082}
+        }
+        if = {
+            limit = {
+                happiness < 0.5
+            }
+            pop_event = {id=idrinthimprovedfactions.1082}
+        }
+        if = {
+            limit = {
+                happiness > 0.5
+            }
+            pop_event = {id=idrinthimprovedfactions.1081}
+        }
+        if = {
+            limit = {
+                happiness > 0.6
+            }
+            pop_event = {id=idrinthimprovedfactions.1081}
+        }
+        if = {
+            limit = {
+                happiness > 0.69
+            }
+            pop_event = {id=idrinthimprovedfactions.1081}
+        }
+        if = {
+            limit = {
+                happiness > 0.77
+            }
+            pop_event = {id=idrinthimprovedfactions.1081}
+        }
+        if = {
+            limit = {
+                happiness > 0.84
+            }
+            pop_event = {id=idrinthimprovedfactions.1081}
+        }
+        if = {
+            limit = {
+                happiness > 0.9
+            }
+            pop_event = {id=idrinthimprovedfactions.1081}
+        }
+        if = {
+            limit = {
+                happiness > 0.95
+            }
+            pop_event = {id=idrinthimprovedfactions.1081}
+        }
+        if = {
+            limit = {
+                happiness > 0.99
+            }
+            pop_event = {id=idrinthimprovedfactions.1081}
+        }
+    }
+}
+pop_event = {
+    id = idrinthimprovedfactions.1081
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        owner = {
+            country_event = { id = idrinthimprovedfactions.10810 }
+        }
+        if = {
+            limit = { is_enslaved = no }
+            owner = {
+                country_event = { id = idrinthimprovedfactions.10810 }
+            }
+        }
+        if = {
+            limit = { member_of_faction = yes }
+            owner = {
+                country_event = { id = idrinthimprovedfactions.10810 }
+            }
+        }
+        if = {
+            limit = { 
+                member_of_faction = yes
+                is_enslaved = no
+            }
+            owner = {
+                country_event = { id = idrinthimprovedfactions.10810 }
+            }
+        }
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.10810
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        random_list = {
+            2 = {
+                add_event_chain_counter = {
+                    event_chain = idrinthimprovedfactions_influence_materialist
+                    counter = idrinthimprovedfactions_positive
+                    amount = 1
+                }
+            }
+            1 = {
+                add_event_chain_counter = {
+                    event_chain = idrinthimprovedfactions_influence_materialist
+                    counter = idrinthimprovedfactions_negative
+                    amount = -1
+                }
+            }
+            1 = {
+                add_event_chain_counter = {
+                    event_chain = idrinthimprovedfactions_influence_materialist
+                    counter = idrinthimprovedfactions_positive
+                    amount = 2
+                }
+            }
+            16 = { }
+        }
+    }
+}
+pop_event = {
+    id = idrinthimprovedfactions.1082
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        owner = {
+            country_event = { id = idrinthimprovedfactions.10820 }
+        }
+        if = {
+            limit = { is_enslaved = no }
+            owner = {
+                country_event = { id = idrinthimprovedfactions.10820 }
+            }
+        }
+        if = {
+            limit = { member_of_faction = yes }
+            owner = {
+                country_event = { id = idrinthimprovedfactions.10820 }
+            }
+        }
+        if = {
+            limit = { 
+                member_of_faction = yes
+                is_enslaved = no
+            }
+            owner = {
+                country_event = { id = idrinthimprovedfactions.10820 }
+            }
+        }
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.10820
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        random_list = {
+            2 = {
+                add_event_chain_counter = {
+                    event_chain = idrinthimprovedfactions_influence_materialist
+                    counter = idrinthimprovedfactions_negative
+                    amount = 1
+                }
+            }
+            1 = {
+                add_event_chain_counter = {
+                    event_chain = idrinthimprovedfactions_influence_materialist
+                    counter = idrinthimprovedfactions_positive
+                    amount = -1
+                }
+            }
+            1 = {
+                add_event_chain_counter = {
+                    event_chain = idrinthimprovedfactions_influence_materialist
+                    counter = idrinthimprovedfactions_negative
+                    amount = 2
+                }
+            }
+            9 = { }
+        }
+    }
+}

@@ -2,15 +2,12 @@ namespace = idrinthimprovedfactions
 
 country_event = {
     id = idrinthimprovedfactions.201
-    title = "idrinthimprovedfactions.201.name"
-    desc = "idrinthimprovedfactions.201.desc"
     hide_window = yes
-    picture = unity_symbol    
     trigger = {
-        has_event_chain = idrinthimprovedfactions_influence
+        has_event_chain = idrinthimprovedfactions_influence_authoritarian
         has_completed_event_chain_counter = {
-            event_chain = idrinthimprovedfactions_influence
-            counter = idrinthimprovedfactions_authoritarian
+            event_chain = idrinthimprovedfactions_influence_authoritarian
+            counter = idrinthimprovedfactions_positive
         }
     }
     immediate = {
@@ -23,34 +20,35 @@ country_event = {
             }
             9 = {
                 add_event_chain_counter = {
-                    event_chain = "idrinthimprovedfactions_influence_1"
-                    counter="idrinthimprovedfactions_authoritarian"
+                    event_chain = idrinthimprovedfactions_influence_authoritarian
+                    counter=idrinthimprovedfactions_positive_1
                     amount = 1
                 }
             }
+            10 = {}
         }
         add_event_chain_counter = {
-            event_chain = "idrinthimprovedfactions_influence"
-            counter="idrinthimprovedfactions_authoritarian"
-            amount = -1000
+            event_chain = idrinthimprovedfactions_influence_authoritarian
+            counter=idrinthimprovedfactions_positive
+            amount = -9999
         }
         add_event_chain_counter = {
-            event_chain = "idrinthimprovedfactions_influence_1"
-            counter="idrinthimprovedfactions_authoritarian"
+            event_chain = idrinthimprovedfactions_influence_authoritarian
+            counter=idrinthimprovedfactions_positive_1
             amount = 1
         }
     }
 }
 country_event = {
     id = idrinthimprovedfactions.211
-    title = "idrinthimprovedfactions.211.name"
-    desc = "idrinthimprovedfactions.211.desc"
+    title = idrinthimprovedfactions.211.name
+    desc = idrinthimprovedfactions.211.desc
     picture = unity_symbol    
     trigger = {
-        has_event_chain = idrinthimprovedfactions_influence_1
+        has_event_chain = idrinthimprovedfactions_influence_authoritarian
         has_completed_event_chain_counter = {
-            event_chain = idrinthimprovedfactions_influence_1
-            counter = idrinthimprovedfactions_authoritarian
+            event_chain = idrinthimprovedfactions_influence_authoritarian
+            counter = idrinthimprovedfactions_positive_1
         }
     }
     immediate = {
@@ -58,7 +56,7 @@ country_event = {
             create_army = {
                 owner = FROM
                 species = FROM
-                type = "authoritarian_army"
+                type = authoritarian_army
             }
         }
         add_modifier = {
@@ -66,12 +64,78 @@ country_event = {
             days = 300
         }
         add_event_chain_counter = {
-            event_chain = "idrinthimprovedfactions_influence_1"
-            counter="idrinthimprovedfactions_authoritarian"
+            event_chain = idrinthimprovedfactions_influence_authoritarian
+            counter=idrinthimprovedfactions_positive_1
             amount = -1000
         }
     }
     option = {
         name = GREAT
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.241
+    title = idrinthimprovedfactions.241.name
+    desc = idrinthimprovedfactions.241.desc
+    picture = unity_symbol    
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence_authoritarian
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_authoritarian
+            counter = idrinthimprovedfactions_negative_1
+        }
+    }
+    immediate = {
+        random_owned_planet = {
+            add_modifier = {
+                modifier = idrinthimprovedfactions_unhappy_authoritarian_planet_1
+                days = 720
+            }
+        }
+        add_modifier = {
+            modifier = idrinthimprovedfactions_unhappy_authoritarian_1
+            days = 240
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_authoritarian
+            counter=idrinthimprovedfactions_negative_1
+            amount = -1000
+        }
+    }
+    option = {
+        name = SCARY
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.221
+    hide_window = yes
+    trigger = {
+        has_event_chain = idrinthimprovedfactions_influence_authoritarian
+        has_completed_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_authoritarian
+            counter = idrinthimprovedfactions_negative
+        }
+    }
+    immediate = {
+        random_owned_planet = {
+            add_modifier = {
+                modifier = idrinthimprovedfactions_unhappy_authoritarian_planet
+                days = 120
+            }
+        }
+        add_modifier = {
+            modifier = idrinthimprovedfactions_unhappy_authoritarian
+            days = 60
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_authoritarian
+            counter=idrinthimprovedfactions_negative
+            amount = -9999
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_authoritarian
+            counter=idrinthimprovedfactions_negative_1
+            amount = 1
+        }
     }
 }

@@ -1,0 +1,87 @@
+idrinthimprovedfactions_unhappy_authoritarian_planet = {
+  pop_ethic_authoritarian_attraction_mult=0.05
+  pop_ethic_egalitarian_attraction_mult=0.05
+  planet_unrest_add=10
+  planet_border_mult=-0.05
+  pop_government_ethic_attraction=-0.05
+  planet_migration_all_pull=-0.1
+
+  icon = "gfx/interface/icons/planet_modifiers/pm_nationalist_corruption.dds"
+  icon_frame = 3
+}
+idrinthimprovedfactions_unhappy_xenophobe_planet = {
+  pop_ethic_xenophile_attraction_mult=0.05
+  pop_ethic_xenophobe_attraction_mult=0.05
+  planet_unrest_add=10
+  planet_border_mult=-0.05
+  pop_government_ethic_attraction=-0.05
+  planet_migration_all_pull=-0.1
+
+  icon = "gfx/interface/icons/planet_modifiers/pm_nationalist_corruption.dds"
+  icon_frame = 3
+}
+idrinthimprovedfactions_unhappy_militarist_planet = {
+  pop_ethic_militarist_attraction_mult=0.05
+  pop_ethic_pacifist_attraction_mult=0.05
+  planet_unrest_add=10
+  planet_border_mult=-0.05
+  pop_government_ethic_attraction=-0.05
+  planet_migration_all_pull=-0.1
+
+  icon = "gfx/interface/icons/planet_modifiers/pm_nationalist_corruption.dds"
+  icon_frame = 3
+}
+idrinthimprovedfactions_unhappy_spiritualist_planet = {
+  pop_ethic_spiritualist_attraction_mult=0.05
+  pop_ethic_materialist_attraction_mult=0.05
+  planet_unrest_add=10
+  planet_border_mult=-0.05
+  pop_government_ethic_attraction=-0.05
+  planet_migration_all_pull=-0.1
+
+  icon = "gfx/interface/icons/planet_modifiers/pm_nationalist_corruption.dds"
+  icon_frame = 3
+}idrinthimprovedfactions_unhappy_egalitarian_planet = {
+  pop_ethic_authoritarian_attraction_mult=0.05
+  pop_ethic_egalitarian_attraction_mult=0.05
+  planet_unrest_add=10
+  planet_border_mult=-0.05
+  pop_government_ethic_attraction=-0.05
+  planet_migration_all_pull=-0.1
+
+  icon = "gfx/interface/icons/planet_modifiers/pm_nationalist_corruption.dds"
+  icon_frame = 3
+}
+idrinthimprovedfactions_unhappy_xenophile_planet = {
+  pop_ethic_xenophile_attraction_mult=0.05
+  pop_ethic_xenophobe_attraction_mult=0.05
+  planet_unrest_add=10
+  planet_border_mult=-0.05
+  pop_government_ethic_attraction=-0.05
+  planet_migration_all_pull=-0.1
+
+  icon = "gfx/interface/icons/planet_modifiers/pm_nationalist_corruption.dds"
+  icon_frame = 3
+}
+idrinthimprovedfactions_unhappy_pacifist_planet = {
+  pop_ethic_militarist_attraction_mult=0.05
+  pop_ethic_pacifist_attraction_mult=0.05
+  planet_unrest_add=10
+  planet_border_mult=-0.05
+  pop_government_ethic_attraction=-0.05
+  planet_migration_all_pull=-0.1
+
+  icon = "gfx/interface/icons/planet_modifiers/pm_nationalist_corruption.dds"
+  icon_frame = 3
+}
+idrinthimprovedfactions_unhappy_materialist_planet = {
+  pop_ethic_spiritualist_attraction_mult=0.05
+  pop_ethic_materialist_attraction_mult=0.05
+  planet_unrest_add=10
+  planet_border_mult=-0.05
+  pop_government_ethic_attraction=-0.05
+  planet_migration_all_pull=-0.1
+
+  icon = "gfx/interface/icons/planet_modifiers/pm_nationalist_corruption.dds"
+  icon_frame = 3
+}

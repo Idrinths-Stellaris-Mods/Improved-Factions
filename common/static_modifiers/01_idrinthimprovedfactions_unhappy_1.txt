@@ -1,0 +1,35 @@
+idrinthimprovedfactions_unhappy_authoritarian_1 = {
+  army_upkeep_mult=0.05
+  army_health=-0.05
+}
+idrinthimprovedfactions_unhappy_egalitarian_1 = {
+  pop_happiness=-0.05
+  leader_influence_cost=0.05
+}
+idrinthimprovedfactions_unhappy_xenophobe_1 = {
+  army_morale=-0.05
+  ship_fire_rate_mult=-0.05
+}
+idrinthimprovedfactions_unhappy_xenophile_1 = {
+  country_society_tech_research_speed=-0.05
+  pop_other_species_happiness=-0.05
+}
+idrinthimprovedfactions_unhappy_militarist_1 = {
+  ship_upkeep_mult=0.05
+  shipsize_corvette_build_cost_mult=0.05
+  shipsize_destroyer_build_cost_mult=0.05
+  shipsize_cruiser_build_cost_mult=0.05
+  shipsize_battleship_build_cost_mult=0.05
+}
+idrinthimprovedfactions_unhappy_pacifist_1 = {
+  pop_growth_speed=-0.05
+  country_trade_attractiveness=-0.05
+}
+idrinthimprovedfactions_unhappy_spiritualist_1 = {
+  country_resource_unity_mult=-0.05
+  edict_influence_cost=0.05
+}
+idrinthimprovedfactions_unhappy_materialist_1 = {
+  country_resource_energy_mult=-0.05
+  country_resource_minerals_mult=-0.05
+}
