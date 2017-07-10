@@ -1,0 +1,68 @@
+namespace = idrinthimprovedfactions
+
+country_event = {
+    id = idrinthimprovedfactions.4
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = { is_difficulty = 2 }
+            country_event = { id = idrinthimprovedfactions.41 }
+               country_event = { id = idrinthimprovedfactions.41 }
+        }
+        if = {
+            limit = { is_difficulty > 0 }
+            country_event = { id = idrinthimprovedfactions.41 }
+        }
+        country_event = { id = idrinthimprovedfactions.41 }
+    }
+}
+
+# REMOVE 25 each
+country_event = {
+    id = idrinthimprovedfactions.41
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_authoritarian
+            counter = idrinthimprovedfactions_negative
+            amount = -25
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_egalitarian
+            counter = idrinthimprovedfactions_negative
+            amount = -25
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_materialist
+            counter = idrinthimprovedfactions_negative
+            amount = -25
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_militarist
+            counter = idrinthimprovedfactions_negative
+            amount = -25
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_pacifist
+            counter = idrinthimprovedfactions_negative
+            amount = -25
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_spiritualist
+            counter = idrinthimprovedfactions_negative
+            amount = -25
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_xenophile
+            counter = idrinthimprovedfactions_negative
+            amount = -25
+        }
+        add_event_chain_counter = {
+            event_chain = idrinthimprovedfactions_influence_xenophobe
+            counter = idrinthimprovedfactions_negative
+            amount = -25
+        }
+    }
+}
