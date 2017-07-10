@@ -222,7 +222,7 @@ country_event = {
                 limit = { is_difficulty = 0 }
                 random_list = {
                     1 = {}
-                    19 = {
+                    49 = {
                         country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
                     }
                 }
@@ -232,7 +232,7 @@ country_event = {
                     limit = { is_difficulty = 1 }
                     random_list = {
                         2 = {}
-                        18 = {
+                        48 = {
                             country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
                         }
                     }
@@ -240,7 +240,7 @@ country_event = {
                 else = {
                     random_list = {
                         4 = {}
-                        16 = {
+                        46 = {
                             country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
                         }
                     }
