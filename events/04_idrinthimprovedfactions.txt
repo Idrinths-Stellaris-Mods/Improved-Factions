@@ -18,7 +18,7 @@ country_event = {
     }
 }
 
-# REMOVE 25 each
+# REMOVE 5 each
 country_event = {
     id = idrinthimprovedfactions.41
     hide_window = yes
@@ -27,42 +27,42 @@ country_event = {
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_authoritarian
             counter = idrinthimprovedfactions_negative
-            amount = -25
+            amount = -5
         }
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_egalitarian
             counter = idrinthimprovedfactions_negative
-            amount = -25
+            amount = -5
         }
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_materialist
             counter = idrinthimprovedfactions_negative
-            amount = -25
+            amount = -5
         }
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_militarist
             counter = idrinthimprovedfactions_negative
-            amount = -25
+            amount = -5
         }
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_pacifist
             counter = idrinthimprovedfactions_negative
-            amount = -25
+            amount = -5
         }
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_spiritualist
             counter = idrinthimprovedfactions_negative
-            amount = -25
+            amount = -5
         }
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_xenophile
             counter = idrinthimprovedfactions_negative
-            amount = -25
+            amount = -5
         }
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_xenophobe
             counter = idrinthimprovedfactions_negative
-            amount = -25
+            amount = -5
         }
     }
 }

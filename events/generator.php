@@ -213,6 +213,47 @@ country_event = {
     is_triggered_only = yes
     hide_window = yes
     immediate = {
+        if = {
+            limit = { is_ai = yes }
+            if = {
+                limit = { is_difficulty = 0 }
+                random_list = {
+                    1 = {}
+                    19 = {
+                        country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
+                    }
+                }
+            }
+            else = {
+                if = {
+                    limit = { is_difficulty = 1 }
+                    random_list = {
+                        2 = {}
+                        18 = {
+                            country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
+                        }
+                    }
+                }
+                else = {
+                    random_list = {
+                        4 = {}
+                        16 = {
+                            country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
+                        }
+                    }
+                }
+            }
+        }
+        else = {
+            country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
+        }
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.10{$pos1}21
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
         random_list = {
             2 = {
                 add_event_chain_counter = {
