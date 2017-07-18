@@ -1,0 +1,33 @@
+idrinthimprovedfactions_config_policy = {
+	potential = {
+		has_country_flag = idrinthimprovedfactions_markedfirstplayer
+	}
+	# no benefits to ai
+	option = {
+		name = "idrinthimprovedfactions_config_policy_none"	
+		valid = {
+			always = yes
+		}
+	}	
+	# ai generates negatives slower
+	option = {
+		name = "idrinthimprovedfactions_config_policy_generation"	
+		valid = {
+			always = yes
+		}
+	}	
+	# ai reduces negatives on a regular basis
+	option = {
+		name = "idrinthimprovedfactions_config_policy_base"	
+		valid = {
+			always = yes
+		}
+	}	
+	# ai reduces negatives on a regular basis and generates it slower
+	option = {
+		name = "idrinthimprovedfactions_config_policy_both"	
+		valid = {
+			always = yes
+		}
+	}	
+}
