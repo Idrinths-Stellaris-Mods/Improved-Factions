@@ -13,39 +13,31 @@ country_event = {
           limit = {
             has_policy_flag = idrinthimprovedfactions_config_policy_none
           }
-          remove_global_flag = idrinthimprovedfactions_config_policy_base
           remove_global_flag = idrinthimprovedfactions_config_policy_both
           remove_global_flag = idrinthimprovedfactions_config_policy_generation
-			    set_global_flag = idrinthimprovedfactions_config_policy_none
         }
         else = {
           if = {
             limit = {
               has_policy_flag = idrinthimprovedfactions_config_policy_base
             }
-            remove_global_flag = idrinthimprovedfactions_config_policy_none
-            remove_global_flag = idrinthimprovedfactions_config_policy_both
             remove_global_flag = idrinthimprovedfactions_config_policy_generation
             set_global_flag = idrinthimprovedfactions_config_policy_base
           }
           else = {
             if = {
               limit = {
-                has_policy_flag = idrinthimprovedfactions_config_policy_none
+                has_policy_flag = idrinthimprovedfactions_config_policy_generation
               }
               remove_global_flag = idrinthimprovedfactions_config_policy_base
-              remove_global_flag = idrinthimprovedfactions_config_policy_none
-              remove_global_flag = idrinthimprovedfactions_config_policy_generation
-              set_global_flag = idrinthimprovedfactions_config_policy_both
+              set_global_flag = idrinthimprovedfactions_config_policy_generation
             }
             else = {
               if = {
                 limit = {
-                  has_policy_flag = idrinthimprovedfactions_config_policy_none
+                  has_policy_flag = idrinthimprovedfactions_config_policy_both
                 }
-                remove_global_flag = idrinthimprovedfactions_config_policy_base
-                remove_global_flag = idrinthimprovedfactions_config_policy_both
-                remove_global_flag = idrinthimprovedfactions_config_policy_none
+                set_global_flag = idrinthimprovedfactions_config_policy_base
                 set_global_flag = idrinthimprovedfactions_config_policy_generation
               }
             }
