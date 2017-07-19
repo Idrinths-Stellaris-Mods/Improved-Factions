@@ -1,0 +1,33 @@
+namespace = idrinthimprovedfactions
+
+event = {
+    id = idrinthimprovedfactions.60
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+      every_country = {
+        limit = {
+          is_ai = no
+          NOT = { has_global_flag = idrinthimprovedfactions_hasmarkedfirstplayer }
+        }
+        set_country_flag = idrinthimprovedfactions_markedfirstplayer
+        set_global_flag = idrinthimprovedfactions_hasmarkedfirstplayer
+      }
+    }
+}
+country_event = {
+    id = idrinthimprovedfactions.61
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+      if = {
+        limit = { has_country_flag = idrinthimprovedfactions_markedfirstplayer }
+        remove_country_flag = idrinthimprovedfactions_markedfirstplayer
+        remove_global_flag = idrinthimprovedfactions_hasmarkedfirstplayer
+        event = {
+          id = idrinthimprovedfactions.60
+          days = 15
+        }
+      }
+    }
+}
