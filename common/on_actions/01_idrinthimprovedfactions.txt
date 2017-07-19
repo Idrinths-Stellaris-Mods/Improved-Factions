@@ -1,5 +1,21 @@
+# Executes after a policy has been changed
+# use last_changed_policy to identify which policy it was
+# This = Country
 on_policy_changed = {
 	events = {
 		idrinthimprovedfactions.5
+	}
+}
+#This = destroyed country
+#From = optional, destroyer (country)
+on_country_destroyed = {
+	events = {
+		idrinthimprovedfactions.61
+	}
+}
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		idrinthimprovedfactions.60
 	}
 }
