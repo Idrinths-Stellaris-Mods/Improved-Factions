@@ -1,5 +1,5 @@
 <?php
-$points = 9999;
+$points = 1000;
 foreach(array(
     'authoritarian',
     'egalitarian',
