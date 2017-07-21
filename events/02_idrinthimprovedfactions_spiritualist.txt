@@ -30,7 +30,7 @@ country_event = {
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_spiritualist
             counter=idrinthimprovedfactions_positive
-            amount = -9999
+            amount = -1000
         }
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_spiritualist
@@ -130,7 +130,7 @@ country_event = {
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_spiritualist
             counter=idrinthimprovedfactions_negative
-            amount = -9999
+            amount = -1000
         }
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_spiritualist
