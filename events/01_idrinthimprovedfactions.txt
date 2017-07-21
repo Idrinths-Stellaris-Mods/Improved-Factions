@@ -10,7 +10,10 @@ country_event = {
                 has_event_chain = idrinthimprovedfactions_influence_authoritarian
             }
             if = {
-                limit = { is_ai = yes }
+                limit = {
+                    is_ai = yes
+                    has_global_flag = idrinthimprovedfactions_config_policy_base
+                }
                 country_event = {id=idrinthimprovedfactions.4}
             }
             every_owned_pop = {
