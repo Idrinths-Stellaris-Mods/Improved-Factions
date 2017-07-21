@@ -13,7 +13,7 @@ country_event = {
           limit = {
             has_policy_flag = idrinthimprovedfactions_config_policy_none
           }
-          remove_global_flag = idrinthimprovedfactions_config_policy_both
+          remove_global_flag = idrinthimprovedfactions_config_policy_base
           remove_global_flag = idrinthimprovedfactions_config_policy_generation
         }
         else = {
