@@ -8,6 +8,7 @@ idrinthimprovedfactions_config_policy = {
 		valid = {
 			always = yes
 		}
+                policy_flags = { idrinthimprovedfactions_config_policy_none }
 	}	
 	# ai generates negatives slower
 	option = {
@@ -15,6 +16,7 @@ idrinthimprovedfactions_config_policy = {
 		valid = {
 			always = yes
 		}
+                policy_flags = { idrinthimprovedfactions_config_policy_generation }
 	}	
 	# ai reduces negatives on a regular basis
 	option = {
@@ -22,6 +24,7 @@ idrinthimprovedfactions_config_policy = {
 		valid = {
 			always = yes
 		}
+                policy_flags = { idrinthimprovedfactions_config_policy_base }
 	}	
 	# ai reduces negatives on a regular basis and generates it slower
 	option = {
@@ -29,5 +32,6 @@ idrinthimprovedfactions_config_policy = {
 		valid = {
 			always = yes
 		}
+                policy_flags = { idrinthimprovedfactions_config_policy_both }
 	}	
 }

@@ -4,77 +4,70 @@ country_event = {
     id = idrinthimprovedfactions.1
     hide_window = yes
     is_triggered_only = yes
-    mean_time_to_happen = { days = 15 }
     immediate = {
-        every_country = {
-            limit = { 
-                exists = capital_scope
-                has_event_chain = idrinthimprovedfactions_influence_authoritarian
+        if = {
+            limit = {
+                is_ai = yes
+                has_global_flag = idrinthimprovedfactions_config_policy_base
+            }
+            country_event = {id=idrinthimprovedfactions.4}
+        }
+        every_owned_pop = {
+            if = {
+                limit = {
+                    pop_has_ethic = ethic_authoritarian
+                    is_growing = no
+                }
+                pop_event = {id=idrinthimprovedfactions.101}
             }
             if = {
                 limit = {
-                    is_ai = yes
-                    has_global_flag = idrinthimprovedfactions_config_policy_base
+                    pop_has_ethic = ethic_egalitarian
+                    is_growing = no
                 }
-                country_event = {id=idrinthimprovedfactions.4}
+                pop_event = {id=idrinthimprovedfactions.102}
             }
-            every_owned_pop = {
-                if = {
-                    limit = {
-                        pop_has_ethic = ethic_authoritarian
-                        is_growing = no
-                    }
-                    pop_event = {id=idrinthimprovedfactions.101}
+            if = {
+                limit = {
+                    pop_has_ethic = ethic_xenophobe
+                    is_growing = no
                 }
-                if = {
-                    limit = {
-                        pop_has_ethic = ethic_egalitarian
-                        is_growing = no
-                    }
-                    pop_event = {id=idrinthimprovedfactions.102}
+                pop_event = {id=idrinthimprovedfactions.103}
+            }
+            if = {
+                limit = {
+                    pop_has_ethic = ethic_xenophile
+                    is_growing = no
                 }
-                if = {
-                    limit = {
-                        pop_has_ethic = ethic_xenophobe
-                        is_growing = no
-                    }
-                    pop_event = {id=idrinthimprovedfactions.103}
+                pop_event = {id=idrinthimprovedfactions.104}
+            }
+            if = {
+                limit = {
+                    pop_has_ethic = ethic_militarist
+                    is_growing = no
                 }
-                if = {
-                    limit = {
-                        pop_has_ethic = ethic_xenophile
-                        is_growing = no
-                    }
-                    pop_event = {id=idrinthimprovedfactions.104}
+                pop_event = {id=idrinthimprovedfactions.105}
+            }
+            if = {
+                limit = {
+                    pop_has_ethic = ethic_pacifist
+                    is_growing = no
                 }
-                if = {
-                    limit = {
-                        pop_has_ethic = ethic_militarist
-                        is_growing = no
-                    }
-                    pop_event = {id=idrinthimprovedfactions.105}
+                pop_event = {id=idrinthimprovedfactions.106}
+            }
+            if = {
+                limit = {
+                    pop_has_ethic = ethic_spiritualist
+                    is_growing = no
                 }
-                if = {
-                    limit = {
-                        pop_has_ethic = ethic_pacifist
-                        is_growing = no
-                    }
-                    pop_event = {id=idrinthimprovedfactions.106}
+                pop_event = {id=idrinthimprovedfactions.107}
+            }
+            if = {
+                limit = {
+                    pop_has_ethic = ethic_materialist
+                    is_growing = no
                 }
-                if = {
-                    limit = {
-                        pop_has_ethic = ethic_spiritualist
-                        is_growing = no
-                    }
-                    pop_event = {id=idrinthimprovedfactions.107}
-                }
-                if = {
-                    limit = {
-                        pop_has_ethic = ethic_materialist
-                        is_growing = no
-                    }
-                    pop_event = {id=idrinthimprovedfactions.108}
-                }
+                pop_event = {id=idrinthimprovedfactions.108}
             }
         }
     }

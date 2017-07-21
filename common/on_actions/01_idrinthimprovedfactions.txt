@@ -1,7 +1,8 @@
 # No scope, like on_game_start
 on_monthly_pulse = {
 	events = {
-		idrinthimprovedfactions.1
+		idrinthimprovedfactions.60
+		idrinthimprovedfactions.7
 	}
 }
 # Executes after a policy has been changed

@@ -1,0 +1,19 @@
+namespace = idrinthimprovedfactions
+
+event = {
+    id = idrinthimprovedfactions.7
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        every_country = {
+            limit = { 
+                exists = capital_scope
+                has_event_chain = idrinthimprovedfactions_influence_authoritarian
+            }
+            country_event = {
+                id = idrinthimprovedfactions.1
+                days = 15
+            }
+        }
+    }
+}

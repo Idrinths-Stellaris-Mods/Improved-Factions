@@ -5,14 +5,17 @@ event = {
     hide_window = yes
     is_triggered_only = yes
     immediate = {
-      every_country = {
-        limit = {
-          is_ai = no
-          NOT = { has_global_flag = idrinthimprovedfactions_hasmarkedfirstplayer }
+        if = {
+            limit = { NOT = { has_global_flag = idrinthimprovedfactions_hasmarkedfirstplayer } }
+            every_country = {
+                limit = {
+                    is_ai = no
+                    NOT = { has_global_flag = idrinthimprovedfactions_hasmarkedfirstplayer }
+                }
+                set_country_flag = idrinthimprovedfactions_markedfirstplayer
+                set_global_flag = idrinthimprovedfactions_hasmarkedfirstplayer
+            }
         }
-        set_country_flag = idrinthimprovedfactions_markedfirstplayer
-        set_global_flag = idrinthimprovedfactions_hasmarkedfirstplayer
-      }
     }
 }
 country_event = {
@@ -20,14 +23,10 @@ country_event = {
     hide_window = yes
     is_triggered_only = yes
     immediate = {
-      if = {
-        limit = { has_country_flag = idrinthimprovedfactions_markedfirstplayer }
-        remove_country_flag = idrinthimprovedfactions_markedfirstplayer
-        remove_global_flag = idrinthimprovedfactions_hasmarkedfirstplayer
-        event = {
-          id = idrinthimprovedfactions.60
-          days = 15
+        if = {
+            limit = { has_country_flag = idrinthimprovedfactions_markedfirstplayer }
+            remove_country_flag = idrinthimprovedfactions_markedfirstplayer
+            remove_global_flag = idrinthimprovedfactions_hasmarkedfirstplayer
         }
-      }
     }
 }

@@ -152,25 +152,39 @@ country_event = {
     hide_window = yes
     immediate = {
         random_list = {
-            2 = {
+            3 = {
                 add_event_chain_counter = {
                     event_chain = idrinthimprovedfactions_influence_{$ethic}
                     counter = idrinthimprovedfactions_positive
                     amount = 1
                 }
             }
-            1 = {
+            2 = {
                 add_event_chain_counter = {
                     event_chain = idrinthimprovedfactions_influence_{$ethic}
                     counter = idrinthimprovedfactions_negative
                     amount = -1
                 }
             }
-            1 = {
+            2 = {
                 add_event_chain_counter = {
                     event_chain = idrinthimprovedfactions_influence_{$ethic}
                     counter = idrinthimprovedfactions_positive
                     amount = 2
+                }
+            }
+            1 = {
+                add_event_chain_counter = {
+                    event_chain = idrinthimprovedfactions_influence_{$ethic}
+                    counter = idrinthimprovedfactions_negative
+                    amount = -2
+                }
+            }
+            1 = {
+                add_event_chain_counter = {
+                    event_chain = idrinthimprovedfactions_influence_{$ethic}
+                    counter = idrinthimprovedfactions_positive
+                    amount = 3
                 }
             }
             16 = { }
@@ -226,29 +240,29 @@ country_event = {
                         country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
                     }
                 }
+                else = {
+                    if = {
+                        limit = { is_difficulty = 1 }
+                        random_list = {
+                            2 = {}
+                            48 = {
+                                country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
+                            }
+                        }
+                        else = {
+                            random_list = {
+                                4 = {}
+                                46 = {
+                                    country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             else = {
-                if = {
-                    limit = { is_difficulty = 1 }
-                    random_list = {
-                        2 = {}
-                        48 = {
-                            country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
-                        }
-                    }
-                }
-                else = {
-                    random_list = {
-                        4 = {}
-                        46 = {
-                            country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
-                        }
-                    }
-                }
+                country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
             }
-        }
-        else = {
-            country_event = { id = idrinthimprovedfactions.10{$pos1}21 }
         }
     }
 }
@@ -279,7 +293,21 @@ country_event = {
                     amount = 2
                 }
             }
-            9 = { }
+            1 = {
+                add_event_chain_counter = {
+                    event_chain = idrinthimprovedfactions_influence_{$ethic}
+                    counter = idrinthimprovedfactions_positive
+                    amount = -2
+                }
+            }
+            1 = {
+                add_event_chain_counter = {
+                    event_chain = idrinthimprovedfactions_influence_{$ethic}
+                    counter = idrinthimprovedfactions_negative
+                    amount = 3
+                }
+            }
+            10 = { }
         }
     }
 }";
