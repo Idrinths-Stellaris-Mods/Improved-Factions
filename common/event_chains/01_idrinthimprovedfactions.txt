@@ -6,10 +6,10 @@ idrinthimprovedfactions_influence_authoritarian = {
             max=1000
         }
         idrinthimprovedfactions_positive = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative_1 = {
             max=1000
@@ -24,16 +24,17 @@ idrinthimprovedfactions_influence_egalitarian = {
             max=1000
         }
         idrinthimprovedfactions_positive = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative_1 = {
             max=1000
         }
     }
-}idrinthimprovedfactions_influence_militarist = {
+}
+idrinthimprovedfactions_influence_militarist = {
     icon = gfx/interface/icons/situation_log/situation_log_quest.dds
     picture = GFX_evt_archaeological_dig
     counter = {
@@ -41,16 +42,17 @@ idrinthimprovedfactions_influence_egalitarian = {
             max=1000
         }
         idrinthimprovedfactions_positive = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative_1 = {
             max=1000
         }
     }
-}idrinthimprovedfactions_influence_pacifist = {
+}
+idrinthimprovedfactions_influence_pacifist = {
     icon = gfx/interface/icons/situation_log/situation_log_quest.dds
     picture = GFX_evt_archaeological_dig
     counter = {
@@ -58,16 +60,17 @@ idrinthimprovedfactions_influence_egalitarian = {
             max=1000
         }
         idrinthimprovedfactions_positive = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative_1 = {
             max=1000
         }
     }
-}idrinthimprovedfactions_influence_spiritualist = {
+}
+idrinthimprovedfactions_influence_spiritualist = {
     icon = gfx/interface/icons/situation_log/situation_log_quest.dds
     picture = GFX_evt_archaeological_dig
     counter = {
@@ -75,16 +78,17 @@ idrinthimprovedfactions_influence_egalitarian = {
             max=1000
         }
         idrinthimprovedfactions_positive = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative_1 = {
             max=1000
         }
     }
-}idrinthimprovedfactions_influence_materialist = {
+}
+idrinthimprovedfactions_influence_materialist = {
     icon = gfx/interface/icons/situation_log/situation_log_quest.dds
     picture = GFX_evt_archaeological_dig
     counter = {
@@ -92,16 +96,17 @@ idrinthimprovedfactions_influence_egalitarian = {
             max=1000
         }
         idrinthimprovedfactions_positive = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative_1 = {
             max=1000
         }
     }
-}idrinthimprovedfactions_influence_xenophile = {
+}
+idrinthimprovedfactions_influence_xenophile = {
     icon = gfx/interface/icons/situation_log/situation_log_quest.dds
     picture = GFX_evt_archaeological_dig
     counter = {
@@ -109,16 +114,17 @@ idrinthimprovedfactions_influence_egalitarian = {
             max=1000
         }
         idrinthimprovedfactions_positive = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative_1 = {
             max=1000
         }
     }
-}idrinthimprovedfactions_influence_xenophobe = {
+}
+idrinthimprovedfactions_influence_xenophobe = {
     icon = gfx/interface/icons/situation_log/situation_log_quest.dds
     picture = GFX_evt_archaeological_dig
     counter = {
@@ -126,10 +132,10 @@ idrinthimprovedfactions_influence_egalitarian = {
             max=1000
         }
         idrinthimprovedfactions_positive = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative = {
-            max=9999
+            max=1000
         }
         idrinthimprovedfactions_negative_1 = {
             max=1000
