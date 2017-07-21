@@ -214,7 +214,10 @@ country_event = {
     hide_window = yes
     immediate = {
         if = {
-            limit = { is_ai = yes }
+            limit = {
+                is_ai = yes
+                has_global_flag = idrinthimprovedfactions_config_policy_generation
+            }
             if = {
                 limit = { is_difficulty = 0 }
                 random_list = {
