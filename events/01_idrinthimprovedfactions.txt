@@ -3,6 +3,8 @@ namespace = idrinthimprovedfactions
 country_event = {
     id = idrinthimprovedfactions.1
     hide_window = yes
+    is_triggered_only = yes
+    mean_time_to_happen = { days = 15 }
     immediate = {
         every_country = {
             limit = { 
