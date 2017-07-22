@@ -144,6 +144,14 @@ pop_event = {
                 country_event = { id = idrinthimprovedfactions.10{$pos1}10 }
             }
         }
+        random_list = {
+            1 = {
+                owner = {
+                    country_event = { id = idrinthimprovedfactions.10{$pos1}10 }
+                }
+            }
+            2 = { }
+        }
     }
 }
 country_event = {
@@ -219,6 +227,14 @@ pop_event = {
             owner = {
                 country_event = { id = idrinthimprovedfactions.10{$pos1}20 }
             }
+        }
+        random_list = {
+            1 = {
+                owner = {
+                    country_event = { id = idrinthimprovedfactions.10{$pos1}20 }
+                }
+            }
+            2 = { }
         }
     }
 }
@@ -390,7 +406,7 @@ country_event = {
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_{$ethic}
             counter=idrinthimprovedfactions_positive_1
-            amount = -1000
+            amount = -$points
         }
     }
     option = {
@@ -423,7 +439,7 @@ country_event = {
         add_event_chain_counter = {
             event_chain = idrinthimprovedfactions_influence_{$ethic}
             counter=idrinthimprovedfactions_negative_1
-            amount = -1000
+            amount = -$points
         }
     }
     option = {

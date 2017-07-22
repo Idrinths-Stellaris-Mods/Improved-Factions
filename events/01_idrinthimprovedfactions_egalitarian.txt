@@ -131,6 +131,14 @@ pop_event = {
                 country_event = { id = idrinthimprovedfactions.10210 }
             }
         }
+        random_list = {
+            1 = {
+                owner = {
+                    country_event = { id = idrinthimprovedfactions.10210 }
+                }
+            }
+            2 = { }
+        }
     }
 }
 country_event = {
@@ -206,6 +214,14 @@ pop_event = {
             owner = {
                 country_event = { id = idrinthimprovedfactions.10220 }
             }
+        }
+        random_list = {
+            1 = {
+                owner = {
+                    country_event = { id = idrinthimprovedfactions.10220 }
+                }
+            }
+            2 = { }
         }
     }
 }
